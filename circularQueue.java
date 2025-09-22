@@ -7,7 +7,7 @@ public class circularQueue {
     private int arr[] = new int[10];
     private int n = arr.length;
 
-    public void Add(int val) throws Exception { // TC - O(1)
+    public void Add(int val) throws Exception { 
         if (size == arr.length) {
             throw new Exception("Queue is full...");
         }
@@ -23,7 +23,7 @@ public class circularQueue {
         size++;
     }
 
-    public int remove() throws Exception {  // TC - O(1)
+    public int remove() throws Exception { 
         if (size == 0) {
             throw new Exception("queue is empty");
         }
@@ -38,14 +38,14 @@ public class circularQueue {
 
     }
 
-    public int peek() throws Exception { // TC - O(1)
+    public int peek() throws Exception { 
         if (size == 0) {
             throw new Exception("queue is empty");
         }
         return arr[front];
     }
 
-    public void display() throws Exception { // TC - O(N + N) in case of rare < front so overall TC - O(N)
+    public void display() throws Exception { 
         if (size == 0) {
             throw new Exception("queue is empty");
         }
