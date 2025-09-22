@@ -6,11 +6,11 @@ public class Stack {
     private int idx = 0;
 
 
-    public void push(int x){ // TC - O(1)
+    public void push(int x){ 
         arr[idx] = x;
         idx++;
     }
-    public int peack(){ // TC - O(1)
+    public int peack(){ 
         if(idx == 0){
             System.out.println("Stack is empty");
             return -1;
@@ -18,7 +18,7 @@ public class Stack {
         return arr[idx-1];
 
     }
-    public int pop(){ // TC - O(1)
+    public int pop(){ 
         if(idx == 0){
             System.out.println("Stack is empty");
             return -1;
@@ -30,19 +30,19 @@ public class Stack {
     }
     public int size(){
         return idx;
-    } // TC - O(1)
-    public boolean isEmpty(){ // TC - O(1)
+    } 
+    public boolean isEmpty(){ 
         if(idx == 0) return true;
         return  false;
     }
 
-    public void display(){ // TC - O(N) where N is the length of elements in Stack
+    public void display(){ 
         for (int i = 0; i < idx; i++) {
             System.out.print(  arr[i] + " ");
         }
         System.out.println();
     }
-    public boolean isStackFull(){ // TC - O(1)
+    public boolean isStackFull(){ 
         if(idx == arr.length) return true;
         return false;
     }
