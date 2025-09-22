@@ -5,21 +5,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       // DECLARATION OF ARRAY IN JAVA
-        // 1 -> BY DEFINE SIZE
+       // DECLARATION 
         int[] arr = new int[10];
-        // 2 -> BY DIRECT ASSIGN VALUE
+        
         int[] arr1 = {1,2,3,4,5,6,7,8,9,10};
 
 
         // Traversal a Array by LOOP
-        for (int i = 0; i < arr.length; i++) { // Time Complexity - O(N) depend on Array length
+        for (int i = 0; i < arr.length; i++) { 
             // i -> indices of Array
             // [i] -> Access the value at current indices
             System.out.print(arr[i]);
         }
 
-        // Insertion in Array
+        // Insertion
         // 1 -> Self insert a Element
         arr[0] = 5;
         arr[1] = 8;
@@ -28,12 +27,12 @@ public class Main {
 
         // 2 -> By Loop & Using Scanner Class for user input
         Scanner sc = new Scanner(System.in); // Scanner class
-        for (int i = 0; i < arr.length; i++) { // Time Complexity - O(N) depend on Array length
+        for (int i = 0; i < arr.length; i++) { 
             arr[i] = sc.nextInt(); // taking a integer value at particular index
         }
 
 
-        // Deletion in Array Using methods
+        // Deletion 
 
         deleteElementInArray(arr,arr.length,2);
         /*
@@ -59,7 +58,7 @@ public class Main {
             System.out.println("Element  not exist in Array");
         }
 
-        // 2 -> Binary Serch {For SORTED ARRAY ONLY } Time Complexity -O(logN)
+        // 2 -> Binary Serch {For SORTED ARRAY ONLY } 
         int si = 0;
         int ei = arr.length-1;
         int target = 5;
