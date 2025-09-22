@@ -33,7 +33,7 @@ public class selfqueue {
 
     public int peek(){
         return arr[front];
-    } // TC -O(1)
+    } 
 
     public boolean isEmpty(){ // TC -O(1)
         return arr.length == 0;
@@ -50,5 +50,5 @@ public class selfqueue {
 
     public int getSize(){
         return size;
-    } // TC -O(1)
+    } 
 }
